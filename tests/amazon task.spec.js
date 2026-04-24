@@ -1,5 +1,4 @@
 import{test}from '@playwright/test';
-import { log } from 'node:console';
 test('amazon task' ,async({page})=>{
     await page.goto("https://www.amazon.in/");
     await page.locator('//input[@id="twotabsearchtextbox"]').fill('Laptop');
@@ -7,8 +6,8 @@ test('amazon task' ,async({page})=>{
     await page.waitForTimeout(3000);
     await page.locator('//span[contains(text(),"ASUS Vivobook S14")]').first().click();
     await page.waitForTimeout(3000);
-    // await page.locator('JUIIIUU87"]').click();
-    // await page.waitForTimeout(3000);
+    await page.locator('//div[@data-csa-c-slot-id="newAccordionRow_0"]//div[@class="a-button-stack"]//input[@id="add-to-cart-button"]').click();
+    await page.waitForTimeout(3000);
     const addtocart =await page.locator('//a[@href="/dp/B0FMRV42V9"]');
      
     if(await addtocart.isVisible()){
