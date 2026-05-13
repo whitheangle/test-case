@@ -5,6 +5,7 @@ await page.locator('//input[@id="twotabsearchtextbox"]').fill("laptop");
 await page.keyboard.press('Enter');
 await page.waitForTimeout(2000);
 const pricesText = await page.locator ('//div[@data-component-type="s-search-result"]/descendant::span[@class="a-price-whole"] ').allTextContents();
+// function to find the index of the minimum price               
 const minval = pricesText.reduce((minIdx, curr, idx) => {
 const mintext = parseFloat(pricesText[minIdx].replace(/[^\d.]/g, ''));
 const currVal = parseFloat(curr.replace(/[^\d.]/g, ''));

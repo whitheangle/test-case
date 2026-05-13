@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2391","get started link","edge","2026-05-13","passed","2026-05-13","","example.spec.js","",""
+"","30708","amazon task","edge","2026-05-13","broken","2026-05-13","","amazon task.spec.js","",""
+"","23712","myntra price","edge","2026-05-13","passed","2026-05-13","","myntra.spec.js","",""
+"","31254","launch url","edge","2026-05-13","broken","2026-05-13","","product.spec.js","",""
+"","16419","amazon functionality","edge","2026-05-13","passed","2026-05-13","","amazon test.spec.js","",""
+"","1876","has title","edge","2026-05-13","passed","2026-05-13","","example.spec.js","",""
+"","30725","amazon functionality","edge","2026-05-13","broken","2026-05-13","","amazon_add_to_cart.spec.js","",""
